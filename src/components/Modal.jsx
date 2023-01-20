@@ -43,7 +43,12 @@ const Modal = (recipes, props) => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Edit recipe</Button>
+      {recipes.where === "recipe" && (
+        <Button onClick={handleOpen}>Edit recipe</Button>
+      )}
+      {recipes.where === "home" && (
+        <Button onClick={handleOpen}>Add recipe</Button>
+      )}
       {isOpen && (
         <div>
           <ModalWrapper>

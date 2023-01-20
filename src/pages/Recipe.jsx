@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Link from "../components/Link";
-import Modal from "../components/ModalEdit";
+import Modal from "../components/Modal";
 
 const Recipe = () => {
   const currentPath = window.location.pathname;
